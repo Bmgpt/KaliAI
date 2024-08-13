@@ -41,19 +41,19 @@ def print_with_effect(text):
             print(char, end='', flush=True)
             time.sleep(0.02) 
     except KeyboardInterrupt:
-        print("\033[1;31;40mEvora stopped.\033[0m")
+        print("\033[1;31;40mKali AI stopped.\033[0m")
         sys.exit()
 
 
-print("\033[1;97m\033[1;31;40mEvora:\033[0m ", end='')
-print_with_effect("Welcome I'm Evora. Ask me anything, and I'll help. Thanks TheEthicalGuy For Evora.\n\n")
+print("\033[1;97m\033[1;31;40mKali AI:\033[0m ", end='')
+print_with_effect("Welcome I'm Kali AI. Ask me anything, and I'll help. Thanks Anons For Kali AI.\n\n")
 
 
 print("\033[1;32;40mStarting the server...")
 try:
     AIH.StartItUp()
 except KeyboardInterrupt:
-    print("\033[1;31;40mEvora stopped.\033[0m")
+    print("\033[1;31;40mKali AI stopped.\033[0m")
     sys.exit()
 except:
     print("A STRANGE ERROR OCCURRED, PLEASE RESTART THE TOOL")
@@ -118,7 +118,7 @@ class MyHTTPRequestHandler(BaseHTTPRequestHandler):
             self.send_response(200)
             self.send_header("Content-type", "image/ico")
             self.end_headers()
-            with open("templates/style/img/evanai.ico", "rb") as file:
+            with open("templates/style/img/evanaia.ico", "rb") as file:
                 self.wfile.write(file.read())
 
         elif parsed_path.path == "/get_response":
