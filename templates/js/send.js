@@ -80,7 +80,7 @@ function sendMessage() {
     userMessage = replaceNewlinesWithBr(userMessage); // Apply only to user message
     var userDiv = document.createElement("div");
     userDiv.className = "message-user";
-    userDiv.innerHTML = "<strong class='you'>You</strong><br>" + userMessage + "<br><br>";
+    userDiv.innerHTML = "<strong class='you'>Anons</strong><br>" + userMessage + "<br><br>";
     chatbox.appendChild(userDiv);
     chatbox.scrollTop = chatbox.scrollHeight;
 
@@ -103,7 +103,7 @@ function sendMessage() {
             botMessage = escapeHtml(botMessage);
             botMessage = formatCodeBlocks(botMessage); // Apply code block formatting
             botMessage = botMessage.replace(/\n/g, "<br>");
-            botMessage = botMessage.replace(/Evora:/g, "");
+            botMessage = botMessage.replace(/Kali AI:/g, "");
             botMessage = botMessage.split(/(<pre><code>[\s\S]*?<\/code><\/pre>)/g).map(function(part) {
                 if (part.startsWith("<pre><code>") && part.endsWith("</code></pre>")) {
                     return part; // Skip replacing newlines for code blocks
@@ -114,7 +114,7 @@ function sendMessage() {
 
             var botDiv = document.createElement("div");
             botDiv.className = "message-bot";
-            botDiv.innerHTML = "<strong class='evora'>Evora</strong><br>" + botMessage + "<br><br>";
+            botDiv.innerHTML = "<strong class='kaliai'>Kali AI</strong><br>" + botMessage + "<br><br>";
             chatbox.appendChild(botDiv);
 
             chatbox.scrollTop = chatbox.scrollHeight;
