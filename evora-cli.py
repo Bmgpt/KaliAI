@@ -27,12 +27,12 @@ def print_with_effect(text):
             print(char, end='', flush=True)
             time.sleep(0.02) 
     except KeyboardInterrupt:
-        print("\033[0;31;40mEvora stopped.\033[0m")
+        print("\033[0;31;40mKali AI stopped.\033[0m")
         sys.exit()
 
 
-print("\033[1;97m\033[1;31;40mEvora:\033[0m ", end='')
-print_with_effect("Welcome I'm Evora. Ask me anything, and I'll help. Thanks TheEthicalGuy For Evora.\n\n")
+print("\033[1;97m\033[1;31;40mKali AI:\033[0m ", end='')
+print_with_effect("Welcome I'm Kali AI. Ask me anything, and I'll help. Thanks Anons For Kali AI.\n\n")
 
 def main():
     print("\033[1;32;40mStarting the session...\033[0m")
@@ -54,7 +54,7 @@ def main():
                 response = sys_execution(ev_commands)
             else:
                 response = AIH.GetReb(userInput)
-            print(f"\n\033[1;31;40mEvora:\033[0m {response}\n")
+            print(f"\n\033[1;31;40mKali AI:\033[0m {response}\n")
         except KeyboardInterrupt:
             print("\033[1;31;40mSession closed.\033[0m")
             sys.exit()
