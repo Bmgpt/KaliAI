@@ -118,7 +118,7 @@ class MyHTTPRequestHandler(BaseHTTPRequestHandler):
             self.send_response(200)
             self.send_header("Content-type", "image/ico")
             self.end_headers()
-            with open("templates/style/img/evanaia.ico", "rb") as file:
+            with open("templates/style/img/evanai.ico", "rb") as file:
                 self.wfile.write(file.read())
 
         elif parsed_path.path == "/get_response":
