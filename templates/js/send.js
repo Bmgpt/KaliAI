@@ -114,7 +114,7 @@ function sendMessage() {
 
             var botDiv = document.createElement("div");
             botDiv.className = "message-bot";
-            botDiv.innerHTML = "<strong class='kaliai'>Kali AI</strong><br>" + botMessage + "<br><br>";
+            botDiv.innerHTML = "<strong class='evora'>Kali AI</strong><br>" + botMessage + "<br><br>";
             chatbox.appendChild(botDiv);
 
             chatbox.scrollTop = chatbox.scrollHeight;
